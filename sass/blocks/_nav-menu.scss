@@ -1,0 +1,88 @@
+.nav-menu {
+    display: none;
+    /* Tablet */
+    @media (max-width: 1199px) {
+        padding-top: 35px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: rgba(255, 255, 255, 0.623);
+        width: 320px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0%;
+        display: block;
+        &__logo {
+            margin-bottom: 20px;
+
+            a.text-line {
+                font-size: 42px;
+                font-weight: 900;
+                position: relative;
+                line-height: 1;
+                z-index: 1;
+            }
+        }
+
+        &__list {
+            margin-bottom: 40px;
+            li {
+                margin-bottom: 15px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &__link {
+            text-decoration: underline;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        &__social {
+            margin-bottom: 30px;
+        }
+
+        &__icon {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &__email {
+            font-size: 18px;
+            color: var(--main_blue);
+        }
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        width: 100%;
+        padding-right: 35px;
+        padding-left: 20px;
+    }
+}
+
+.fade {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(44, 52, 73, 0.75);
+    display: none;
+    z-index: 9;
+    backdrop-filter: blur(3px);
+
+    &--active {
+        display: block;
+    }
+
+    @media (min-width: 1200) {
+        display: none;
+    }
+}

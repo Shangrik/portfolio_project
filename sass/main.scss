@@ -1,0 +1,28 @@
+// base
+@import "./base/base";
+@import "./base/vars";
+
+// blocks
+@import "./blocks/button";
+@import "./blocks/textline";
+@import "./blocks/navburger";
+@import "./blocks/nav-menu";
+@import "./blocks/pagination";
+@import "./blocks/project-card";
+@import "./blocks/underline_grad";
+@import "./blocks/titles";
+@import "./blocks/text-link";
+@import "./blocks/text-bg";
+@import "./blocks/link";
+@import "./blocks/social-icons";
+@import "./blocks/mail-form";
+@import "./blocks/contacts-list";
+
+// sections
+@import "./sections/_header.scss";
+@import "./sections/portfolio";
+@import "./sections/workstyle";
+@import "./sections/contacts";
+@import "./sections/footer";
+@import "./sections/works";
+@import "./sections/contacts-page";

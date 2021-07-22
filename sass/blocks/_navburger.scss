@@ -1,0 +1,70 @@
+.navburger {
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    &__line {
+        display: block;
+        width: 40px;
+        height: 5px;
+        background-color: #000;
+        position: relative;
+        transition: background-color 0.2s ease-in 0.1s;
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 5px;
+            position: absolute;
+            background-color: #000;
+            transition: 0.2s transform ease-in, bottom 0.2s linear 0.2s;
+        }
+        &::before {
+            left: 0;
+            bottom: -10px;
+        }
+        &::after {
+            left: 0;
+            bottom: 10px;
+        }
+    }
+    /* Tablet */
+    @media (max-width: 1199px) {
+        display: flex;
+    }
+}
+
+.navburger--active {
+    z-index: 10;
+    position: fixed;
+    top: 45px;
+    right: 15px;
+    .navburger__line {
+        background-color: transparent;
+
+        &::before,
+        &::after {
+            bottom: 0;
+        }
+
+        &::before {
+            transform: rotate(45deg);
+            transition: transform 0.4s ease-in;
+        }
+        &::after {
+            transform: rotate(-45deg);
+            transition: transform 0.4s ease-in;
+        }
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        right: 35px;
+    }
+}

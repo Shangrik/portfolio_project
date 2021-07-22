@@ -1,0 +1,9 @@
+.line-gradient {
+    display: inline;
+
+    background-repeat: no-repeat;
+    background-position: center bottom 0px;
+    background-size: 0% 1px;
+    background-image: linear-gradient(to right, var(--main_red), rgb(218, 9, 9));
+    transition: 0.5s;
+}

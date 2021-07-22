@@ -1,0 +1,36 @@
+.pagination {
+    position: fixed;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+
+    &__item {
+        display: block;
+        margin-bottom: 15px;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        border: none;
+        background-color: var(--main_blue);
+        cursor: pointer;
+
+        &--active {
+            background-color: var(--main_red);
+        }
+
+        a {
+            display: block;
+            height: 100%;
+        }
+    }
+
+    @media (max-width: 1400px) {
+        right: 10px;
+    }
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        display: none;
+    }
+}

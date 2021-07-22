@@ -1,0 +1,33 @@
+.social-icons {
+    display: flex;
+
+    &__item {
+        width: 50px;
+        height: 50px;
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+        // svg color default
+        & svg[data-icon="facebook"] {
+            .svg-bgcolor {
+                fill: #4d76a1;
+            }
+        }
+        & svg[data-icon="vk"] {
+            .svg-bgcolor {
+                fill: #4d76a1;
+            }
+        }
+        & svg[data-icon="telegram"] {
+            .svg-bgcolor {
+                fill: #039be5;
+            }
+        }
+        & svg[data-icon="github"] {
+            .svg-bgcolor {
+                fill: #000;
+            }
+        }
+    }
+}

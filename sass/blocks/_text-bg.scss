@@ -1,0 +1,5 @@
+.text-bg {
+    &::selection {
+        background-color: var(--text_line);
+    }
+}

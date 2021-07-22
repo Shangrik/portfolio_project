@@ -1,0 +1,138 @@
+.project-card {
+    max-width: 360px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        max-width: 340px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        max-width: 290px;
+    }
+
+    &__img {
+        position: relative;
+        margin-bottom: 10px;
+        overflow: hidden;
+
+        /* Mobile XS */
+        @media (max-width: 599px) {
+            margin-bottom: 13px;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            left: 0;
+            top: 100%;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            background-color: rgba(245, 221, 99, 0.85);
+            transition: 0.5s;
+        }
+    }
+
+    &__button {
+        position: absolute;
+        width: 245px;
+        text-align: center;
+        bottom: -100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px 25px;
+        background-color: #fff;
+        color: var(--main_red);
+        border-radius: 30px;
+        font-size: 22px;
+        font-weight: 800;
+        transition: 0.5s;
+        cursor: pointer;
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            font-size: 16px;
+            padding: 10px 10px;
+        }
+
+        /* Mobile XS */
+        @media (max-width: 599px) {
+            font-size: 14px;
+        }
+    }
+
+    &__title {
+        padding: 15px 10px;
+
+        /* Mobile XS */
+        @media (max-width: 599px) {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1;
+        margin-top: 15px;
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            font-size: 18px;
+        }
+
+        /* Mobile XS */
+        @media (max-width: 599px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.project-card--big {
+    max-width: 555px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        max-width: 340px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        max-width: 290px;
+    }
+
+    & .title-4 {
+        font-size: 32px;
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            font-size: 24px;
+        }
+
+        /* Mobile */
+        @media (max-width: 899px) {
+            font-size: 20px;
+        }
+
+        /* Mobile XS */
+        @media (max-width: 599px) {
+            font-size: 18px;
+        }
+    }
+
+    & .project-card__subtitle {
+        font-size: 22px;
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            font-size: 18px;
+        }
+
+        /* Mobile XS */
+        @media (max-width: 599px) {
+            font-size: 16px;
+        }
+    }
+}

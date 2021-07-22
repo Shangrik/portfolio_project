@@ -1,0 +1,16 @@
+.text-line {
+    position: relative;
+    width: fit-content;
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 110%;
+        left: 0px;
+        transform: translate(-5%);
+        bottom: 1px;
+        height: 12px;
+        z-index: -1;
+        background-color: var(--text_line);
+    }
+}

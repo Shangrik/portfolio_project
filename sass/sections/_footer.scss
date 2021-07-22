@@ -1,0 +1,51 @@
+.footer {
+    background-color: rgb(51, 51, 51);
+    min-height: 150px;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        padding-top: 35px;
+    }
+
+    &__title {
+        margin-bottom: 14px;
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 500;
+    }
+
+    &__descr {
+        p {
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 1.2;
+            color: #b0b0b0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            /* Mobile XS */
+            @media (max-width: 599px) {
+                line-height: 1.6;
+                margin-bottom: 5px;
+            }
+        }
+
+        a {
+            color: #b0b0b0;
+            font-size: 16px;
+            line-height: 1.2;
+            border-bottom: 1px solid #b0b0b0;
+            transition: 0.5s border-color, 0.5s color;
+            &:hover,
+            &:active {
+                color: #fff;
+                border-color: #fff;
+            }
+        }
+    }
+}

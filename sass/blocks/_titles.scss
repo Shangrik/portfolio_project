@@ -1,0 +1,65 @@
+// .title-5 {
+//     font-size: 26px;
+//     line-height: 1.4;
+
+//     /* Tablet */
+//     @media (max-width: 1199px) {
+//         font-size: 24px;
+//     }
+// }
+
+.title-4 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        font-size: 24px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        font-size: 22px;
+    }
+
+    &--fw800 {
+        font-weight: 800;
+    }
+}
+
+.title-3 {
+    font-size: 40px;
+    font-weight: 800;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        font-size: 32px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        font-size: 30px;
+    }
+}
+
+.title-2 {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        font-size: 52px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        font-size: 46px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        font-size: 42px;
+    }
+}
